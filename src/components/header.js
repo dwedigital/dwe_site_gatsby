@@ -14,16 +14,6 @@ const Header = () => {
         siteMetadata {
           title
         }
-        siteSocialinks {
-          linkedin {
-            link
-            icon
-          }
-          twitter {
-            link
-            icon
-          }
-        }
       }
     }
   `)
@@ -49,10 +39,10 @@ const Header = () => {
             </Nav.Link>
           </Nav>
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to={data.site.siteSocialinks.linkedin.link}>
+            <Nav.Link as={Link} to='/'>
               <FontAwesomeIcon icon={faLinkedin} className="fa-lg" />
             </Nav.Link>
-            <Nav.Link as={Link} to={data.site.siteSocialinks.twitter.link}>
+            <Nav.Link as={Link} to='/'>
               <FontAwesomeIcon icon={faTwitter} className="fa-lg" />
             </Nav.Link>
           </Nav>

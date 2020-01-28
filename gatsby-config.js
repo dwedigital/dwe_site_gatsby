@@ -5,16 +5,6 @@ module.exports = {
     author: `@gatsbyjs`,
   },
 
-  siteSocialinks: {
-    linkedin: {
-      link: "/test",
-      icon:'lin'
-    },
-    twitter: {
-      link: 'twitter',
-      icon:'twi'
-    }
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -22,6 +12,36 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          posts: require.resolve("./src/layouts/posts-layout.js"),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,20 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
+
 
 const Blog = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+
   return (<Layout>
     <SEO title="Blog" />
     <h1 className="mb-4 impact-header">Analytics. Growth. Operations.</h1>

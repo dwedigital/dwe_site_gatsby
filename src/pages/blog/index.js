@@ -25,7 +25,6 @@ function BlogIndex({ data }) {
     </Layout>
   )
 }
-
 export default BlogIndex
 
 export const pageQuery = graphql`

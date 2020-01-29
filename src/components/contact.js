@@ -28,11 +28,11 @@ const Contact = () => {
               <Col>
                 <h3>Contact Details:</h3>
                 <p>
-                  <FontAwesomeIcon icon={faPhone} className="fa-lg mr-3" />
+                  <FontAwesomeIcon icon={faPhone} className="mr-3" />
                   <a href="tel:+44 (0)7788275564"> +44(0)7788275564</a>
                 </p>
                 <p>
-                  <FontAwesomeIcon icon={faInbox} className="fa-lg mr-3" />
+                  <FontAwesomeIcon icon={faInbox} className="mr-3" />
                   <a href="mailto:dave@dwedigital.com">dave@dwedigital.com</a>
                 </p>
               </Col>
@@ -62,7 +62,7 @@ const Contact = () => {
 
               <Form.Group controlId="formMessage">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" placeholder="Message" required />
+                <Form.Control as="textarea" placeholder="Message" required rows="5" />
               </Form.Group>
 
               <Button variant="primary" type="submit">

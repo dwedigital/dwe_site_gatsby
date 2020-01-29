@@ -9,7 +9,7 @@ import Posts from '../components/latest_posts'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 className="mb-4 impact-header">Analytics > Operations > Growth.</h1>
+    <h1 className="mb-4 impact-header">Business Growth Consulting</h1>
     <p>
       DWE Digital is a digital consultancy focusing on scaling businesses. We
       help clients define the Objectives & Key Results of their business and how

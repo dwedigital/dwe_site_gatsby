@@ -8,18 +8,20 @@ function BlogPostLayout({ children, pageContext }) {
   console.log(children)
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>DWE Blog | {title}</title>
-      <meta name="description" content={summary} />
+
+        <meta name="description" content={summary} />
       </Helmet>
-    <Layout>
-      <h1>{title}</h1>
-      <span className="published">
-        Published: <time>{date}</time>
-      </span>
-      <article className="mt-5">{children}</article>
+      <Layout>
+
+          <h1>{title}</h1>
+        <span className="published">
+          Published: <time>{date}</time>
+        </span>
+        <article className="mt-5">{children}</article>
       </Layout>
-      </>
+    </>
   )
 }
 

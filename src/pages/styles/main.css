@@ -4,6 +4,15 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     font-size:24px;
+    background-color: white;
+}
+
+.submission{
+    transition: opacity .5s ease-in-out;
+}
+
+.container{
+    background-color: white;
 }
 
 .impact-header{
@@ -20,16 +29,17 @@ body{
     font-size:20px;
 }
 .btn-primary{
-    background-color: black;
+    background-color: #8c8c8c;
     border:0;
     border-radius:0;
-    padding:5px 15px;
+    padding:10px 15px;
     font-family:'IBM Plex Sans';
     font-weight: 400;
+    font-size:20px;
 }
 
 .btn-primary:hover{
-    background-color: rgb(77, 77, 77);
+    background-color: #505050;
 
 }
 .bg-light{
@@ -41,7 +51,7 @@ body{
     font-size: 2.3rem;
     color:#7d7d7d;
     padding:0px 15px;
-    border: 5px solid black
+
 
 }
 
@@ -55,15 +65,17 @@ p{
     line-height: 40px;
     margin:0;
 }
-
+.section{
+    color:grey;
+    font-weight:400;
+}
 .navbar > .container{
     justify-content: start;
     align-items: flex-start;
     border-bottom: 1.5px solid #eaeaea
 }
-.nav-link{
-    font-size:18px;
-}
+ 
+
 
 .nav-link:not(:first-child) {
     
@@ -78,4 +90,13 @@ p{
 
 .nav-link{
     padding-right:15px;
+    font-size:18px;
+}
+
+input, textarea{
+    border-radius: 0!important;
+}
+
+.success{
+    color:green
 }

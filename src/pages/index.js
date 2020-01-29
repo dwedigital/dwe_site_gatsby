@@ -2,7 +2,9 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
-import { Row, Col, Container } from "react-bootstrap"
+import Services from '../components/services'
+import Contact from '../components/contact'
+import Posts from '../components/latest_posts'
 
 const IndexPage = () => (
   <Layout>
@@ -20,62 +22,23 @@ const IndexPage = () => (
     </p>
     <p className="mt-3">
       When the foundations are set we then manage how to grow your customer base
-      through all your sales channels. Using analytics we focus on conversion,
-      rate to minimise easted marketing spend.
+      through all your sales channels. Using analytics we focus on conversion
+      rate to minimise wasted marketing spend.
     </p>
     <hr className="mt-5"></hr>
-    <h1>Services</h1>
+    <h1 className="section">Services</h1>
     <hr></hr>
-    <Container className="mt-5 px-0">
-      <Row className="mt-3 align-items-center">
-        <Col xs={{ span: 12 }} lg>
-          <h1 className="mb-4 impact-header">Analytics</h1>
-        </Col>
-        <Col xs={{ span: 12 }} lg>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          fermentum tortor non mauris rhoncus condimentum. Donec posuere libero
-          at suscipit ornare. Donec vel bibendum elit. Quisque diam velit,
-          viverra eget pulvinar sed, commodo nec urna.
-        </Col>
-      </Row>
-
-      <Row className="mt-3 align-items-center">
-        <Col xs={{ order: 12, span: 12 }} lg={{ order: 1 }}>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          fermentum tortor non mauris rhoncus condimentum. Donec posuere libero
-          at suscipit ornare. Donec vel bibendum elit. Quisque diam velit,
-          viverra eget pulvinar sed, commodo nec urna.
-        </Col>
-
-        <Col xs={{ order: 1, span: 12 }} lg={{ order: 12 }}>
-          <h1 className="mb-4 impact-header">Operations</h1>
-        </Col>
-      </Row>
-
-      <Row className="mt-3 align-items-center">
-        <Col xs={{ span: 12 }} lg>
-          <h1 className="mb-4 impact-header">Growth</h1>
-        </Col>
-        <jsx></jsx>
-        <Col xs={{ span: 12 }} lg>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          fermentum tortor non mauris rhoncus condimentum. Donec posuere libero
-          at suscipit ornare. Donec vel bibendum elit. Quisque diam velit,
-          viverra eget pulvinar sed, commodo nec urna.
-        </Col>
-      </Row>
-    </Container>
+    <Services />
 
     <hr className="mt-5"></hr>
-    <h1>Recent Blog Posts</h1>
-    <hr></hr>
+    <h1 className="section">Recent Blog Posts</h1>
+    <hr />
+    <Posts />
 
     <hr className="mt-5"></hr>
-    <h1>Work With Us</h1>
+    <h1 className="section">Work With Us</h1>
     <hr></hr>
+    <Contact />
   </Layout>
 )
 

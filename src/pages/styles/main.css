@@ -93,6 +93,7 @@ p{
 .nav-link{
     padding:5px 15px!important;
     font-size:18px;
+    transition: all .5s ease-in-out;
 }
 .pl-0{
     padding-left:15px;

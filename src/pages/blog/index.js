@@ -14,7 +14,7 @@ function BlogIndex({ data }) {
           <div key={node.id}>
             <header>
               <h1 className='section'>{title}</h1>
-              <div className="date">{date}</div>
+              <div className="date">Published: {date}</div>
             </header>
             <p className="excerpt">{node.excerpt}</p>
             <Button as={Link} to={node.fields.slug}>Read ></Button>

@@ -14,38 +14,32 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/pages/posts/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/pages/posts/images/`,
+        path: `${__dirname}/src/pages/blog/posts/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/pages/blog`,
+        path: `${__dirname}/src/pages/blog/`,
       },
     },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/pages/posts`,
+        path: `${__dirname}/src/pages/blog/`,
       },
     },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          posts: require.resolve("./src/layouts/posts-layout.js"),
+          blog: require.resolve("./src/layouts/posts-layout.js"),
         },
         gatsbyRemarkPlugins: [
           {
@@ -61,6 +55,7 @@ module.exports = {
               maxWidth: 800,
             },
           },
+         
         ],
       },
     },

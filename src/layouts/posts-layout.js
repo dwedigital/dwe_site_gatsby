@@ -3,6 +3,7 @@ import Layout from "./layout"
 import './styles/layouts.css'
 import { Helmet } from "react-helmet"
 
+
 function BlogPostLayout({ children, pageContext }) {
   const { title,date, summary } = pageContext.frontmatter
   console.log(children)
@@ -16,9 +17,8 @@ function BlogPostLayout({ children, pageContext }) {
       <Layout>
 
           <h1 className="section">{title}</h1>
-        <span className="published">
-          Published: <time>{date}</time>
-        </span>
+
+    
         <article className="mt-5">{children}</article>
       </Layout>
     </>

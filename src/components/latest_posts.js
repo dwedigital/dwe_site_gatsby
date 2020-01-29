@@ -30,18 +30,20 @@ const Posts = ()=> {
         const { title, date } = node.frontmatter
         return (
           <div key={node.id} className="mt-3">
-
-              <h2>{title}</h2>
-              <div className="date">{date}</div>
+            <h2>{title}</h2>
+            <div className="date">{date}</div>
 
             <p className="excerpt">{node.excerpt}</p>
-            <div className='ml-auto'>
-              <Button as={Link} to={node.fields.slug} className="mt-3">Read ></Button>
-          </div>
-
+            <div className="ml-auto">
+              <Button as={Link} to={node.fields.slug} className="mt-3">
+                Read >
+              </Button>
+            </div>
+            <hr />
           </div>
         )
       })}
+      
       </div>
   )
 }

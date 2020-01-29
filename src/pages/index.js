@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 className="mb-4 impact-header">Analytics. Growth. Operations.</h1>
+    <h1 className="mb-4 impact-header">Operations. Analytics. Growth.</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum
       tortor non mauris rhoncus condimentum. Donec posuere libero at suscipit

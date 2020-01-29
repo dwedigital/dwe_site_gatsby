@@ -7,8 +7,9 @@ body{
 }
 
 .impact-header{
-    background-color: tomato;
+    background-color: black;
     padding:10px;
+    color:white;
 }
 
 .bg-light{
@@ -19,7 +20,8 @@ body{
     font-weight: 500;
     font-size: 2.3rem;
     color:#7d7d7d;
-    padding-left:15px;
+    padding:0px 15px;
+    border: 5px solid black
 
 }
 

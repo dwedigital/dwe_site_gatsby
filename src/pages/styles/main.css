@@ -12,6 +12,26 @@ body{
     color:white;
 }
 
+.date{
+    font-weight: 100;
+    font-size:18px;
+}
+.excerpt{
+    font-size:20px;
+}
+.btn-primary{
+    background-color: black;
+    border:0;
+    border-radius:0;
+    padding:5px 15px;
+    font-family:'IBM Plex Sans';
+    font-weight: 400;
+}
+
+.btn-primary:hover{
+    background-color: rgb(77, 77, 77);
+
+}
 .bg-light{
     background-color: white;
 }

@@ -19,7 +19,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       // Name of the field you are adding
       name: "slug",
       // Generated value based on filepath with "blog" prefix
-      value: `/blog${value}`,
+      value: `/posts${value}`,
     })
   }
 }

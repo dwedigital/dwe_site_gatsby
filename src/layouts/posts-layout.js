@@ -15,7 +15,7 @@ function BlogPostLayout({ children, pageContext }) {
       </Helmet>
       <Layout>
 
-          <h1>{title}</h1>
+          <h1 className="section">{title}</h1>
         <span className="published">
           Published: <time>{date}</time>
         </span>

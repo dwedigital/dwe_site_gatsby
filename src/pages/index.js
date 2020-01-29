@@ -25,20 +25,22 @@ const IndexPage = () => (
       through all your sales channels. Using analytics we focus on conversion
       rate to minimise wasted marketing spend.
     </p>
-    <hr className="mt-5"></hr>
+    <div className="mt-5">
     <h1 className="section">Services</h1>
-    <hr></hr>
-    <Services />
+      <Services />
+      </div>
 
-    <hr className="mt-5"></hr>
+    <div className="mt-5">
     <h1 className="section">Recent Blog Posts</h1>
-    <hr />
-    <Posts />
 
-    <hr className="mt-5"></hr>
+      <Posts />
+      </div>
+
+    <div className="mt-5">
     <h1 className="section">Work With Us</h1>
-    <hr></hr>
-    <Contact />
+    
+      <Contact />
+      </div>
   </Layout>
 )
 

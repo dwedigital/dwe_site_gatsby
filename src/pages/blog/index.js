@@ -12,7 +12,7 @@ function BlogIndex({ data }) {
         return (
           <div key={node.id}>
             <header>
-              <h1>{title}</h1>
+              <h1 className='section'>{title}</h1>
               <div className="date">{date}</div>
             </header>
             <p className="excerpt">{node.excerpt}</p>

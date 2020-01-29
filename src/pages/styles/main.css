@@ -68,7 +68,9 @@ p{
     line-height: 40px;
     margin:0;
 }
-
+.section{
+    font-weight: 200;
+}
 .navbar > .container{
     justify-content: start;
     align-items: flex-start;

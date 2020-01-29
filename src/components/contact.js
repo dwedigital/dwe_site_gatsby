@@ -14,7 +14,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="mb-5">
+    <div id="contact" className="mb-5 mt-5">
       <Container>
         <Row>
           <Col lg>

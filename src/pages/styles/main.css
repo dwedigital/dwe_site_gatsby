@@ -59,16 +59,16 @@ body{
 h1{
     font-weight: 700;
     font-size: 3rem;
+    background-color: black;
+    color:white;
+    padding: 15px 10px;
 }
 
 p{
     line-height: 40px;
     margin:0;
 }
-.section{
-    color:grey;
-    font-weight:400;
-}
+
 .navbar > .container{
     justify-content: start;
     align-items: flex-start;

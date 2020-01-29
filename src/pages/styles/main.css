@@ -91,8 +91,15 @@ p{
 }
 
 .nav-link{
-    padding-right:15px;
+    padding:5px 15px!important;
     font-size:18px;
+}
+.pl-0{
+    padding-left:15px;
+}
+.nav-link:hover{
+    background-color: black;
+    color:white!important;
 }
 
 input, textarea{

@@ -29,7 +29,7 @@ GTM allows you to have multiple environments and then choose which environment h
 
 To create you development environment go to your Google Tag Manager account and got to **Admin > Environments:**
 
-![gtm.png](gtm.png)
+![gtm.png](./images/gtm.png)
 
 You should already have a Live & Latest environment which are created as default. Click New and create an environment called Dev. Give it a description and optionally fill in the URL.
 
@@ -80,15 +80,15 @@ Once you have the GTM side of things taken care & installed the module head over
         : "<live ga_env>"
     };
 ```
-To test it is working run `npm start` and open the Tag Assistant extension in Chrome. INspect to see that the GTM tag is properly implemented and (in my testing case) the GA tag is not being loaded:
+To test it is working run `npm start` and open the Tag Assistant extension in Chrome. Inspect to see that the GTM tag is properly implemented and (in my testing case) the GA tag is not being loaded:
 
-![ta_1.png](./ta_1.png)
+![ta_1.png](./images/ta_1.png)
 
 Example of Tag Assistant on the Dev Environment
 
 Then build your app and then re-run the same test this time checking that GTM tag **and** the GA tag is loading:
 
-![ta_2.png](./ta_2.png)
+![ta_2.png](./images/ta_2.png)
 
 Tag Assistant on production showing both GTM & GA being loaded correctly
 

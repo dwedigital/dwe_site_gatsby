@@ -64,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `DWE - Business Growth Consultants`,
         short_name: `dwe.dev`,
         start_url: `/`,
         background_color: `#000000`,

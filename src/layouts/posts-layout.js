@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "./layout"
 import './styles/layouts.css'
 import { Helmet } from "react-helmet"
-
+import './styles/blog-layout.css'
 
 function BlogPostLayout({ children, pageContext }) {
   const { title,date, summary } = pageContext.frontmatter

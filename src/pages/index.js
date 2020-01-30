@@ -9,7 +9,7 @@ import Posts from "../components/latest_posts"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 className="mb-4 impact-header">We Grow Your Business</h1>
+    <h1 className="mb-4 impact-header entry">We Grow Your Business</h1>
     <p>
       DWE is a consultancy that thrives on growing businesses. We work
       hand-in-hand with clients to ensure the obvious questions have answers,

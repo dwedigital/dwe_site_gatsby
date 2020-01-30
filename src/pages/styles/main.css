@@ -23,6 +23,11 @@ h2,h3,h4{
     background-color: black;
     padding:10px;
     color:white;
+   
+}
+
+.entry{
+     padding:80px;
 }
 
 .date{

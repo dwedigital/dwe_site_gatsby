@@ -26,8 +26,8 @@ const title = data.site.siteMetadata.title
     <>
       <Header siteTitle={title} />
       <Container>
-        <Row className="mt-5">
-          <Col className="mt-5">
+        <Row className="mt-3">
+          <Col >
             <main>{children}</main>
           </Col>
         </Row>

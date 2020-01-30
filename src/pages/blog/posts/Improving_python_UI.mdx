@@ -1,0 +1,107 @@
+---
+title: Improving the usability of Python Scripts
+date: 2019-10-02
+category: Python
+tags: cli, usability
+---
+
+The most typical way of running a python script is via the terminal / command line interface (CLI). Whether it is an ad-hoc report, an automation script or a tool that you want to manually run the terminal is the easiest way of getting up and running.
+
+From writing numerous scripts to automate work tasks I noticed there were 2 main areas of  usability that always, well, sucked to be honest:
+
+1. Input - typically asking a user to provide a filename, length of time (daily, weekly monthly etc.) or choose a column within an excel where the data sat
+2. Feedback / progress - once the script got what it needed it would typically churn through the data doing whatever was needed with no real indication of length of time left or progress
+
+There are numerous other usability features than can, and should, be looked in to but to create focus for this post the above are the main points I wanted to cover.
+
+For the full example head over to:
+[Python UI Example on Github](https://github.com/dwedigital/python_ui)
+
+### Input
+
+There are many libraries out there to help improve python input out of the box but the most lightweight solution I found was with [Bullet](https://github.com/Mckinsey666/bullet/blob/master/DOCUMENTATION.md). 
+
+The gist of Bullet is it takes a list of options and then can allow the user to interact with this list in a number of ways dependent on how you configure it. 
+
+My use case was wanting a user to select a time frame and I wanted Bullet to display these options so that I would get consistent (and error free) input every time with minimal fuss:
+
+``` python
+from bullet import Bullet, colors
+
+def getUserInput():
+    # User options as a list for Bullet choices
+    options = ['50','100','200','400']
+
+    userChoices = Bullet(
+        # Prompt for the user to see
+        prompt = "Use up & down arrows to make selection",
+        # List of options to choose from
+        choices = options,
+        # How much space to pad in from the start of the prompt 
+        align = 5,
+        # Spacing between the bullet and the choice
+        margin = 2,
+        # Space between the prompt and the list of choices
+        shift = 1,
+        # The foreground colour of the bullet
+        bullet_color = colors.foreground["cyan"]
+    )
+    # The length variable will become the selected input
+    length = userChoices.launch()
+
+    # Convert the choice (string) to integer 
+    return int(length)
+```
+The above results in a nicely formatted choice of options that I, as the user, just have to traverse with up and down arrows then hit enter to make my selection:
+
+![](/images/Bullet_example.gif)
+
+Bullet has far more capabilities than what is demoed here from allowing a user to make multiple selections through to masking password / sensitive input. Checkout the documentation for the full remit of functionality.
+
+### Progress
+
+Once I have gotten the time-frame (or other required manual input from the user) typically my script would run another function that does the heavy lifting. More often than not this function iterates over an object and does whatever manipulation required until it comes to the end of the iterator. I stumbled across [Progress]('https://github.com/verigak/progress/') which is a really simple library for all your progress bar needs!
+
+For this example I take the option from the `getUserInput` (the above example) function and use this as the max number for a loop:
+
+``` python
+
+from progress.bar import Bar, ShadyBar, ChargingBar
+from time import sleep
+
+def progressBar(length):
+    """
+    Sets up the Bar with the following settings:
+
+    Prompt - String: what to print i.e. Processing
+    Max - Integer: the max legnth the bar can be (user choice from getUserInput function)
+    Suffix -  String: See documentation on the possible dynamic values
+
+    """
+    with ChargingBar(
+        "Processing", 
+        max=length,
+        suffix='%(index)d/%(max)d - Time Remaining: %(eta)ds'
+        ) as bar:
+
+        # i is set as 0 and increments by 1 each iteration. 
+        # When it equals the Bar max value the progress bar is at its endpoint
+        i=0
+
+        # Set up the iterator
+        while i < length:
+
+            # Shift the progress bar on to the next iteration
+            bar.next()
+
+            # Sleep just used for demo to slow it down inbetween interations
+            sleep(0.15)
+
+            # Increment i by 1 so you do not get an infite loop!
+            i += 1
+```
+
+The above function takes the input from my previous **input** example above and cycles through a while loop that increments the variable `i` until `i == max`:
+
+![](/images/progress_example.gif)
+

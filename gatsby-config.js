@@ -15,6 +15,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/pages/blog/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages/blog/`,
+      },
+    },
+
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-M2DFD2S",
@@ -36,32 +50,29 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/pages/blog/posts/images/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/pages/blog/`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/src/pages/blog/`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        extensions: [".mdx", ".md"],
         defaultLayouts: {
           blog: require.resolve("./src/layouts/posts-layout.js"),
         },
         gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              ratio: 1.77,
+              height: 400,
+              related: false,
+              noIframeBorder: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -75,6 +86,8 @@ module.exports = {
               maxWidth: 800,
             },
           },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },

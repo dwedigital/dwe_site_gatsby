@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `DWE`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `DWE is a digital consultancy focused on Growth, Operations & Analytics. Grow your business.`,
+    author: `dwe.dev`,
   },
 
   plugins: [

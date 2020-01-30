@@ -41,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: 'DWE - We Grow Businesses',
         },
         {
           property: `og:description`,
@@ -61,7 +61,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: 'DWE - We Grow Businesses',
         },
         {
           name: `twitter:description`,

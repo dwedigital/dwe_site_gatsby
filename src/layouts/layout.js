@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
-import {Container, Row, Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+import SEO from '../components/seo'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
 const title = data.site.siteMetadata.title
   return (
     <>
+      <SEO/>
       <Header siteTitle={title} />
       <Container>
         <Row className="mt-3">

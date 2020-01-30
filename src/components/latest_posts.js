@@ -33,7 +33,7 @@ const Posts = ()=> {
             <h2>{title}</h2>
             <div className="date">{date}</div>
 
-            <p className="excerpt" style={{ "line-height": "0px" }}>
+            <p className="excerpt" style={{ "line-height": "1.6rem" }}>
               {node.excerpt}
             </p>
             <div className="ml-auto" style={{ "text-align": "right" }}>

@@ -31,6 +31,7 @@ h2,h3,h4{
 }
 .excerpt{
     font-size:1.2rem;
+    text-align:left;
 }
 .btn-primary{
     background-color: #8c8c8c;
@@ -123,6 +124,10 @@ input, textarea{
 @media only screen and (max-width: 600px) {
 h1,h2,h3,h4{
     text-align: left;
+}
+
+h2{
+    font-size: 1.7rem;
 }
 
 .nav-link{

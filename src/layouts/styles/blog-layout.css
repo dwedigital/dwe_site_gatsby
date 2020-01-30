@@ -6,4 +6,21 @@ h2,h3,h4{
     margin: 40px 0px;
 }
 
+@media only screen and (max-width: 600px) {
+p{
+    margin: 10px 0px;
+    text-align: left;
+    word-spacing: 0.1rem;
+}
 
+ol{
+    margin: 10px 0px;
+    text-align: left;
+    word-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+li{
+    margin: 5px 0px
+}
+}

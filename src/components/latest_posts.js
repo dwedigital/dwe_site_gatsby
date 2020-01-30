@@ -34,7 +34,7 @@ const Posts = ()=> {
             <div className="date">{date}</div>
 
             <p className="excerpt">{node.excerpt}</p>
-            <div className="ml-auto">
+            <div className="ml-auto" style={{'text-align':'right'}}>
               <Button as={Link} to={node.fields.slug} className="mt-3">
                 Read >
               </Button>

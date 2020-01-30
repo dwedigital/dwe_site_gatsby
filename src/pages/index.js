@@ -18,7 +18,7 @@ const IndexPage = () => (
     </p>
     <p className="mt-3">
       DWE has worked across many client verticals ranging from e-commerce,
-      retail, SaaS and product manafacturers. Chances are we have seen what your
+      retail, SaaS and product manufacturers. Chances are we have seen what your
       business does and what best practice looks like whilst working within the
       parameters of your company.
     </p>

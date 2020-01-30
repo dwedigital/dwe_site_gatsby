@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Services from "../components/services"
 import Contact from "../components/contact"
 import Posts from "../components/latest_posts"
+import Testimonials from '../components/testimonials'
 
 const IndexPage = () => (
   <Layout>
@@ -26,9 +27,13 @@ const IndexPage = () => (
       Management our focus is helping you achieve business growth and managing
       how to scale your company across all digital touchpoints.
     </p>
+
     <div className="mt-5">
       <h1 className="section">Services</h1>
       <Services />
+    </div>
+    <div className="mt-5">
+      <Testimonials />
     </div>
 
     <div className="mt-5">

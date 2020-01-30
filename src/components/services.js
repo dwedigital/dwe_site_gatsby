@@ -6,7 +6,7 @@ const Services = () => {
     <Container className="mt-5 px-0">
       <Row className="mt-5 align-items-center">
         <Col xs={{ span: 12 }} lg className=" justify-content-center">
-          <h1 className="mb-4 impact-header">ANALYTICS</h1>
+          <h1 className="mb-4 impact-header">Analytics</h1>
         </Col>
         <Col xs={{ span: 12 }} lg>
           {" "}
@@ -29,13 +29,13 @@ const Services = () => {
         </Col>
 
         <Col xs={{ order: 1, span: 12 }} lg={{ order: 12 }}>
-          <h1 className="mb-4 impact-header">OPERATIONS</h1>
+          <h1 className="mb-4 impact-header">Operations</h1>
         </Col>
       </Row>
 
       <Row className="mt-5 align-items-center">
         <Col xs={{ span: 12 }} lg>
-          <h1 className="mb-4 impact-header">GROWTH</h1>
+          <h1 className="mb-4 impact-header">Growth</h1>
         </Col>
         <jsx></jsx>
         <Col xs={{ span: 12 }} lg>

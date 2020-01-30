@@ -41,13 +41,14 @@ const Contact = () => {
           <Col lg className="submission">
             <h3>Send A Message</h3>
             <Form
-              onSubmit={sent}
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              name="contact"
+              onSubmit={sent}
             >
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
+
               <Form.Group controlId="formEmail">
                 <Form.Label>Your Email</Form.Label>
                 <Form.Control
@@ -62,7 +63,12 @@ const Contact = () => {
 
               <Form.Group controlId="formMessage">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" placeholder="Message" required rows="5" />
+                <Form.Control
+                  as="textarea"
+                  placeholder="Message"
+                  required
+                  rows="5"
+                />
               </Form.Group>
 
               <Button variant="primary" type="submit">

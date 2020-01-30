@@ -13,11 +13,15 @@ function BlogIndex({ data }) {
         return (
           <div key={node.id}>
             <header>
-              <h1 className='section'>{title}</h1>
+              <h1 className="section">{title}</h1>
               <div className="date">Published: {date}</div>
             </header>
             <p className="excerpt">{node.excerpt}</p>
-            <Button as={Link} to={node.fields.slug}>Read ></Button>
+            <div style={{'text-align':'right'}}>
+              <Button as={Link} to={node.fields.slug}>
+                Read >
+              </Button>
+            </div>
             <hr />
           </div>
         )

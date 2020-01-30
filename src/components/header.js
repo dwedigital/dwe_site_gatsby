@@ -22,7 +22,9 @@ const Header = () => {
       <Container className="flex-column">
         <Row>
           <Navbar.Brand as={Link} to="/" className="mb-4">
-            {data.site.siteMetadata.title}
+            <div className="logo">
+              <span className="logo_one">DWE</span> <span className="logo_two">Digital</span>
+            </div>
           </Navbar.Brand>
         </Row>
 

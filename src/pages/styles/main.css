@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,500,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap');
 
 body{
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size:24px;
     background-color: white;
@@ -9,6 +9,26 @@ body{
 
 h2,h3,h4{
     margin:0px 0px 10px 0px!important;
+}
+.logo{
+    margin-bottom:20px;
+}
+
+.logo_one{
+    background-color: black;
+    color:white;
+    font-size:1.4rem;
+    padding: 10px 15px 10px 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-right:5px;
+}
+
+.logo_two{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
 .submission{
@@ -39,19 +59,27 @@ h2,h3,h4{
     text-align:left;
 }
 .btn-primary{
-    background-color: #8c8c8c;
+    background-color: #353535;
     border:0;
     border-radius:0;
-    padding:10px 15px;
-    font-family:'IBM Plex Sans';
+    padding:3px 30px;
+    font-family:'Montserrat';
     font-weight: 400;
     font-size:20px;
 }
 
 .btn-primary:hover{
-    background-color: #505050;
+    background-color: #727272;
 
 }
+.btn-primary:focus{
+background-color: #353535;
+}
+.btn-primary:active{
+background-color: #353535!important;
+}
+
+
 .bg-light{
     background-color: white;
 }
@@ -82,12 +110,15 @@ p{
     font-weight: 200;
     background-color: white;
     color: black;
-    border: 3px solid black;
+    border-top: 3px double black;
+    border-bottom: 3px double black;
 }
+
+
 .navbar > .container{
     justify-content: start;
     align-items: flex-start;
-    border-bottom: 1.5px solid #eaeaea
+    border-bottom: 2px solid black
 }
  
 .form-control{
@@ -126,6 +157,10 @@ input, textarea{
     color:green
 }
 
+.contact-left{
+    border-right:1px solid black;
+}
+
 @media only screen and (max-width: 600px) {
 h1,h2,h3,h4{
     text-align: left;
@@ -139,4 +174,12 @@ h2{
     padding: 5px 5px!important;
 }
 
+
+}
+
+
+@media only screen and (max-width: 991px) {
+.contact-left{
+border:0;
+}
 }

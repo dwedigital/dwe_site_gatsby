@@ -17,7 +17,7 @@ const Contact = () => {
     <div id="contact" className="mb-5 mt-5">
       <Container>
         <Row>
-          <Col lg>
+          <Col lg className="contact-left">
             <Row>
               <Col>
                 If you want to find out how DWE can help your business then

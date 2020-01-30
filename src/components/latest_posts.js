@@ -33,8 +33,10 @@ const Posts = ()=> {
             <h2>{title}</h2>
             <div className="date">{date}</div>
 
-            <p className="excerpt">{node.excerpt}</p>
-            <div className="ml-auto" style={{'text-align':'right'}}>
+            <p className="excerpt" style={{ "line-height": "0px" }}>
+              {node.excerpt}
+            </p>
+            <div className="ml-auto" style={{ "text-align": "right" }}>
               <Button as={Link} to={node.fields.slug} className="mt-3">
                 Read >
               </Button>

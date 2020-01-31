@@ -13,17 +13,18 @@ const IndexPage = () => (
     <h1 className="mb-4 impact-header entry">We Grow Your Business</h1>
     <p>
       DWE is a consultancy that thrives on growing businesses. We work
-      hand-in-hand with clients to ensure the obvious questions can be measured,
-      have answers, and are actionable.
+      hand-in-hand with clients to ensure key questions can be measured, leading
+      to answers that are actionable.
     </p>
     <p className="mt-3">
       DWE has worked across many client verticals ranging from e-commerce,
       retail, SaaS and product manufacturers. Chances are we have seen what your
-      business does and what best practice looks like whilst working within the
-      parameters of your company.
+      business does and what best practice looks like, allowing us to deliver
+      key insights and actions whilst working within the parameters of your
+      company.
     </p>
     <p className="mt-3">
-      With a career spanning Digital Marketing, Analytics, Operations & Product
+      With experience spanning Digital Marketing, Analytics, Operations & Product
       Management our focus is helping you achieve business growth and managing
       how to scale your company across all digital touchpoints.
     </p>

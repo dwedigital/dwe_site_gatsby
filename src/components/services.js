@@ -10,9 +10,8 @@ const Services = () => {
         </Col>
         <Col xs={{ span: 12 }} lg>
           {" "}
-          Analytics is the bedrock of growing a business. Without proper
-          measurement you have no way of understanding what is working and what
-          is not. We work with you to ensure you have access to the data you
+          Analytics is the bedrock of growing a business. Without accurate
+          measurement you have no way of understanding what works and what doesn't. We work with you to ensure you have access to the data you
           need to build a meaningful measurement framework. With this in place
           the business can make informed investment decisions.
         </Col>
@@ -21,10 +20,10 @@ const Services = () => {
       <Row className="mt-5 align-items-center">
         <Col xs={{ order: 12, span: 12 }} lg={{ order: 1 }}>
           {" "}
-          A lot of small / medium businesses try to grow their customer base
-          without consindering how this affects day-to-day operations. We have
-          worked with several companies in the past and know the tried and
-          tested journey & tools to put in place to reduce operational
+          A lot of small and medium businesses try to grow their customer base
+          without considering how this affects day-to-day operations. We have
+          worked with many companies in the past understanding the tried and
+          tested journey and the tools tools required to reduce operational
           bottlenecks.
         </Col>
 
@@ -43,8 +42,8 @@ const Services = () => {
           Growing an online business can be a minefield and prioritisation is
           key. We have extensive knowledge of online marketing to help you reach
           qualified customers effectively. We look beyond clicks, impressions
-          and vanuty metrics. We focus on decreasing cost per acquistion &
-          return on investment by measuring and focusing on conversion.
+          and vanuty metrics. We focus on decreasing cost per acquisition and
+          return on investment by measuring and focusing on conversion across multiple touchpoints.
         </Col>
       </Row>
     </Container>

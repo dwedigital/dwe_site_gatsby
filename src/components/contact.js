@@ -45,7 +45,7 @@ const Contact = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               name="contact"
-              onSubmit={sent}
+              
             >
               <input type="hidden" name="bot-field" />
               <div className="form-group">

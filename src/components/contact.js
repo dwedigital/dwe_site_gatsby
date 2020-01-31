@@ -40,7 +40,7 @@ const Contact = () => {
           </Col>
           <Col lg className="submission">
             <h3>Send A Message</h3>
-            <Form
+            <form
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
@@ -49,32 +49,36 @@ const Contact = () => {
             >
               <input type="hidden" name="bot-field" />
 
-              <Form.Group controlId="formEmail">
-                <Form.Label>Your Email</Form.Label>
-                <Form.Control
+              <div className="form-group">
+                <label for="emailinput">Your Email</label>
+                <input
+                  className="form-control"
                   type="email"
                   placeholder="Enter your email"
                   required
+                  id="emailinput"
                 />
-                <Form.Text className="text-muted">
+                <small id="emailHelp" className="form-text text-muted">
                   We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
+                </small>
+              </div>
 
-              <Form.Group controlId="formMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control
+              <div className="form-group" controlId="formMessage">
+                <label for="message">Message</label>
+                <textarea
+                  className="form-control"
                   as="textarea"
                   placeholder="Message"
                   required
                   rows="5"
+                  id="message"
                 />
-              </Form.Group>
+              </div>
 
-              <Button variant="primary" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Submit
-              </Button>
-            </Form>
+              </button>
+            </form>
           </Col>
         </Row>
       </Container>

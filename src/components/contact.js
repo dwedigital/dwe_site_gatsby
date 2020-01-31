@@ -64,6 +64,7 @@ const Contact = () => {
               <div className="form-group" controlId="formMessage">
                 <label for="message">Message</label>
                 <textarea
+                  name="message"
                   className="form-control"
                   as="textarea"
                   placeholder="Message"

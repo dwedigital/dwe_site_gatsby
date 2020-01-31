@@ -55,6 +55,7 @@ const Contact = () => {
                   placeholder="Enter your email"
                   required
                   id="emailinput"
+                  name="email"
                 />
                 <small id="emailHelp" className="form-text text-muted">
                   We'll never share your email with anyone else.

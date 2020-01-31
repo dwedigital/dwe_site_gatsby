@@ -48,7 +48,6 @@ const Contact = () => {
               onSubmit={sent}
             >
               <input type="hidden" name="bot-field" />
-
               <div className="form-group">
                 <label for="emailinput">Your Email</label>
                 <input

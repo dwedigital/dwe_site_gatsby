@@ -41,11 +41,10 @@ const Contact = () => {
           <Col lg className="submission">
             <h3>Send A Message</h3>
             <form
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
               name="contact"
-              
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
             >
               <input type="hidden" name="bot-field" />
               <div className="form-group">

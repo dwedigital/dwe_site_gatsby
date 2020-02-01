@@ -29,9 +29,7 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={
-        {'lang':'en'}
-      }
+      htmlAttributes={{ lang: "en" }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
@@ -41,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: 'DWE - We Grow Businesses',
+          content: "DWE - We Grow Businesses",
         },
         {
           property: `og:description`,
@@ -51,6 +49,7 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
+
         {
           name: `twitter:card`,
           content: `summary`,
@@ -61,7 +60,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: 'DWE - We Grow Businesses',
+          content: "DWE - We Grow Businesses",
         },
         {
           name: `twitter:description`,

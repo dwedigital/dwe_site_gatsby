@@ -48,7 +48,7 @@ const Testimonials = () => {
               "font-size": "1rem",
             }}
           >
-            Head of Digital | Rusell & Bromley
+            Head of Digital | Russell & Bromley
           </Row>
         </Col>
         <Col lg lg className="p-3 m-2">

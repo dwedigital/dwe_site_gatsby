@@ -26,7 +26,7 @@ const Testimonials = () => {
               "font-size": "1rem",
             }}
           >
-            Director | adidias Global
+            Director | adidas Global
           </Row>
         </Col>
         <Col lg lg className="p-3 m-2 testimonial">

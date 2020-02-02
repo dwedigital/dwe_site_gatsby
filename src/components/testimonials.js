@@ -12,7 +12,7 @@ const Testimonials = () => {
             It was a pleasure working with DWE Digital on our European paid search
             business at adidas. Our early conversations and analysis led to a
             total account restructure and a total revamp of our approach. DWE Digital
-            is professional, personable, analytical, knowledgeable and I would
+            are professional, personable, analytical, knowledgeable and I would
             gladly work with them again in the future.
           </Row>
           <Row>

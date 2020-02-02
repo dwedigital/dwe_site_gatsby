@@ -42,7 +42,7 @@ const Services = () => {
           Growing an online business can be a minefield and prioritisation is
           key. We have extensive knowledge of online marketing to help you reach
           qualified customers effectively. We look beyond clicks, impressions
-          and vanuty metrics. We focus on decreasing cost per acquisition and
+          and vanity metrics. We focus on decreasing cost per acquisition and
           return on investment by measuring and focusing on conversion across multiple touchpoints.
         </Col>
       </Row>

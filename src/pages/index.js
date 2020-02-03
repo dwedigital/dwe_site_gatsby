@@ -9,7 +9,7 @@ import Testimonials from "../components/testimonials"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Analytics, Opertaions & Growth Consultants" />
+    <SEO title="Analytics, Operations & Growth Consultants" />
     <h1 className="mb-4 impact-header entry">We Grow Your Business</h1>
     <p>
       DWE is a consultancy that thrives on growing businesses. We work

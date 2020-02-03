@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `DWE`,
+    title: `DWE Digital`,
     description: `DWE is a digital consultancy focused on Growth, Operations & Analytics. Grow your business.`,
     author: `dwe.dev`,
   },

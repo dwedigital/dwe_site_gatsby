@@ -23,7 +23,7 @@ const Services = () => {
           A lot of small and medium businesses try to grow their customer base
           without considering how this affects day-to-day operations. We have
           worked with many companies in the past understanding the tried and
-          tested journey and the tools tools required to reduce operational
+          tested journey and the tools required to reduce operational
           bottlenecks.
         </Col>
 

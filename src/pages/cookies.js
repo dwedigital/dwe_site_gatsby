@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="Privacy Policy" />
+    <SEO title="Cookie Policy" />
     <h1>Cookie Policy</h1>
     <h3>What Are Cookies</h3>
 

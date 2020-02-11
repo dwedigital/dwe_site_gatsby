@@ -8,6 +8,7 @@ const NotFoundPage = () => (
     <SEO title="Cookie Policy" />
     <h1>Cookie Policy</h1>
     <h3>What Are Cookies</h3>
+    <h4>Last Updated: 11th Feb 2020</h4>
 
     <p>
       Cookies are standard features of many websites, including this one.
@@ -35,7 +36,7 @@ const NotFoundPage = () => (
       You can prevent the use of cookies by adjusting the settings on your
       browser (refer to your browser's 'help' section for more information on
       how to do this). Please note that disabling cookies will affect the
-      functionality of Pinpoint (as well as the majority of other websites that
+      functionality of DWE Digital (as well as the majority of other websites that
       you visit).
     </p>
 
@@ -51,7 +52,7 @@ const NotFoundPage = () => (
     <p>
       In several special cases we also use cookies provided by trusted third
       parties. The following section details which third party cookies you might
-      encounter whilst using Pinpoint.
+      encounter whilst using DWE Digital.
     </p>
 
     <Table variant="dark">

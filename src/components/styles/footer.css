@@ -1,0 +1,15 @@
+.footer{
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+}
+
+
+.footer .logo_one{
+    background-color:white!important;
+    color:black;
+}
+
+.footer a{
+    color:white;
+}

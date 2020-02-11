@@ -1,7 +1,11 @@
 import React from "react"
 import { Form, Button, Container, Col, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhone, faInbox } from "@fortawesome/free-solid-svg-icons"
+import {
+  faPhone,
+  faInbox,
+  faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons"
 const Contact = () => {
   function sent(e) {
     e.preventDefault()
@@ -14,7 +18,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="contact" className="mb-5 mt-5">
+    <div id="contact" className="mt-5">
       <Container>
         <Row>
           <Col lg className="contact-left">
@@ -34,6 +38,11 @@ const Contact = () => {
                 <p>
                   <FontAwesomeIcon icon={faInbox} className="mr-3" />
                   <a href="mailto:dave@dwedigital.com">dave@dwedigital.com</a>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3" />
+                  DWE Digital, One Waverley Place, Union Street, St Helier, JE1
+                  2PP
                 </p>
               </Col>
             </Row>

@@ -18,7 +18,7 @@ const Footer = () => {
             <span className="logo_one">DWE</span>{" "}
             <span className="logo_two">Digital</span>
           </div>
-          <p>Business Growth Consultants</p>
+          <p>Digital Growth Consultants</p>
         </Col>
       
       </Row>

@@ -41,7 +41,7 @@ console.log(meta)
         },
         {
           property: `og:title`,
-          content: "DWE - We Grow Businesses",
+          content: `${title} | DWE Digital`,
         },
         {
           property: `og:description`,
@@ -66,7 +66,7 @@ console.log(meta)
         },
         {
           name: `twitter:title`,
-          content: "DWE - Digital Growth Consultants",
+          content: `${title} | DWE Digital`,
         },
         {
           name: `twitter:image`,

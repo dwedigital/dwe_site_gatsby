@@ -6,7 +6,8 @@ import './styles/blog-layout.css'
 import SEO from '../components/seo'
 
 function BlogPostLayout({ children, pageContext }) {
-  const { title,date, summary } = pageContext.frontmatter
+  const { title, tags } = pageContext.frontmatter
+  console.log(tags)
   console.log(children)
   return (
     <>

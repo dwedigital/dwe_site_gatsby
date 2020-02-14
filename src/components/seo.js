@@ -19,6 +19,8 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
+            twitterUsername
           }
         }
       }
@@ -49,6 +51,10 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.image,
+        },
 
         {
           name: `twitter:card`,
@@ -56,11 +62,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
-          content: "DWE - We Grow Businesses",
+          content: "DWE - Digital Growth Consultants",
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
         },
         {
           name: `twitter:description`,

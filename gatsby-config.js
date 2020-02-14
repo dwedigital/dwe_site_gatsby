@@ -3,6 +3,9 @@ module.exports = {
     title: `DWE Digital`,
     description: `DWE is a digital consultancy focused on Growth, Operations & Analytics. Grow your business.`,
     author: `dwe.dev`,
+    url: 'https://dwe.dev',
+    image: '/images/dwe_icon.png',
+    twitterUsername:'@dwedigital'
   },
 
   plugins: [

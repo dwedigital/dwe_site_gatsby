@@ -3,14 +3,16 @@ import Layout from "./layout"
 import './styles/layouts.css'
 import { Helmet } from "react-helmet"
 import './styles/blog-layout.css'
+import SEO from '../components/seo'
 
 function BlogPostLayout({ children, pageContext }) {
   const { title,date, summary } = pageContext.frontmatter
   console.log(children)
   return (
     <>
+      <SEO/>
       <Helmet>
-        <title>DWE Blog | {title}</title>
+        <title>{title} | DWE Digital</title>
 
         <meta name="description" content={summary} />
       </Helmet>

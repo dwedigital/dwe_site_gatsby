@@ -32,8 +32,6 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{ lang: "en" }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -41,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: "DWE - We Grow Businesses",
+          content: "DWE Digital - Digital Growth Consultants",
         },
         {
           property: `og:description`,

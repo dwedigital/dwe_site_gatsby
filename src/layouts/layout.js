@@ -14,7 +14,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import SEO from "../components/seo"
 import CookieConsent from "react-cookie-consent"
 import {Link} from "gatsby"
-
+import { Helmet } from "react-helmet"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -30,6 +30,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
+      <Helmet>
+        <title>Analytics, Operations & Growth Consultants | DWE Digital</title>
+
+        <meta name="description" content={summary} />
+      </Helmet>
       <Header siteTitle={title} />
       <Container>
         <Row className="mt-3 mb-5">
@@ -58,7 +63,9 @@ const Layout = ({ children }) => {
             }}
             href=""
           >
-            <Link to="/cookies" style={{ color: "white" }}>Learn More</Link>
+            <Link to="/cookies" style={{ color: "white" }}>
+              Learn More
+            </Link>
           </a>
         </span>
       </CookieConsent>

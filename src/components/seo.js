@@ -53,7 +53,7 @@ console.log(meta)
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: `https://dwe/dev${site.siteMetadata.image}`,
         },
 
         {
@@ -70,7 +70,7 @@ console.log(meta)
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: `https://dwe/dev${site.siteMetadata.image}`,
         },
         {
           name: `twitter:description`,

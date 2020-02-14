@@ -16,26 +16,11 @@ import CookieConsent from "react-cookie-consent"
 import {Link} from "gatsby"
 import { Helmet } from "react-helmet"
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  const title = data.site.siteMetadata.title
-  
+  console.log(children[0])
   return (
     <>
-      <SEO />
-      <Helmet>
-        <title>Analytics, Operations & Growth Consultants | DWE Digital</title>
 
-        <meta name="description" content={summary} />
-      </Helmet>
-      <Header siteTitle={title} />
+      <Header />
       <Container>
         <Row className="mt-3 mb-5">
           <Col>

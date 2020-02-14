@@ -10,17 +10,10 @@ function BlogPostLayout({ children, pageContext }) {
   console.log(children)
   return (
     <>
-      <SEO/>
-      <Helmet>
-        <title>{title} | DWE Digital</title>
-
-        <meta name="description" content={summary} />
-      </Helmet>
       <Layout>
+        <SEO title={title}/>
+        <h1 className="section">{title}</h1>
 
-          <h1 className="section">{title}</h1>
-
-    
         <article className="mt-5">{children}</article>
       </Layout>
     </>

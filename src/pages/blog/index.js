@@ -2,12 +2,14 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../layouts/layout"
 import { Button } from "react-bootstrap"
+import SEO from '../../components/seo'
 
 
 function BlogIndex({ data }) {
   const { edges: posts } = data.allMdx
   return (
     <Layout>
+      <SEO title="Blog" />
       {posts.map(({ node }) => {
         const { title, date } = node.frontmatter
         return (
@@ -17,7 +19,7 @@ function BlogIndex({ data }) {
               <div className="date">Published: {date}</div>
             </header>
             <p className="excerpt">{node.excerpt}</p>
-            <div style={{'text-align':'right'}}>
+            <div style={{ "text-align": "right" }}>
               <Button as={Link} to={node.fields.slug}>
                 Read >
               </Button>

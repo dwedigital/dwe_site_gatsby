@@ -24,7 +24,7 @@ const IndexPage = () => (
       company.
     </p>
     <p className="mt-3">
-      With experience spanning Digital Marketing, Analytics, Operations & Product
+      With experience spanning planning and managing Paid Media teams, Digital Marketing Strategy, Analytics, Operations & Product
       Management our focus is helping you achieve business growth and managing
       how to scale your company across all digital touchpoints.
     </p>
